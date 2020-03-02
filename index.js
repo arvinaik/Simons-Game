@@ -81,7 +81,7 @@ function GameOver() {
   }, 300)
   $("#level-title").text("Restart by pressing any key")
   $(document).keypress(StartGame)
-  $(document).click(StartGame)
+  $(document).dblclick(StartGame)
 };
 
 CorrectBlocks = [];
@@ -91,7 +91,7 @@ var level = 0;
 
 
 $(document).on("keypress", StartGame);
-$(document).on("click", StartGame);
+$(document).on("dblclick", StartGame);
 function StartGame() {
 
   if (started === false) {
